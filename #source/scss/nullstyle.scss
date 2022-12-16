@@ -1,0 +1,32 @@
+//Сбрасываем поля и отступы для всех элементов (чтобы убрать отступы по умолчанию в некоторых браузерах)
+*{padding: 0;margin: 0;border: 0;}
+//Включаем альтернативную блочную модель для страницы (ширина блока не изменяется при изменении значений padding, margin, border)
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+//Убираем обводку по умолчанию при наведении
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+//Задаем display: block для элементов (в некоторых браузерах нужно явно задать display:block для nav, header, footer, aside)
+nav,footer,header,aside{display: block;}
+//Задаем для страницы ширину и высоту окна браузера, устанавливаем фиксированное значение шрифта и высоту линий, отменяем увеличение шрифта при стретче в некоторых смартфонах
+html,body{height:100%;width:100%;font-size:100%;line-height:1; font-size: $fontsize; text-size-adjust:100%; -ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+//Теги форм наследуют значения font-family родительского блока
+input,button,textarea{font-family:inherit;}
+//Убираем кнопку для очистки поля ввода в IE-браузерах
+input::-ms-clear{display: none;}
+//Меняем курсор для кнопки button
+button{cursor: pointer;}
+//Отменяем padding и border для кнопок, которые заданы по умолчанию в браузере firefox
+button::-moz-focus-inner{padding:0;border:0;}
+//Отменяем подкрашивание цветом посещенных ссылок
+a,a:visited{text-decoration: none;}
+a{color: $color;}
+//Отменяем подсвечивание ссылки по умолчанию при наведении
+a:hover{text-decoration: none;}
+//Убираем маркеры для элементов списка, которые заданы по умолчанию
+ul li{list-style: none;}
+//Выравниваем картинку по верхней части родительского блока
+img{vertical-align: top;}
+//Заголовочные теги наследуют размер шрифта родительского элемента
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+//Блокируем возможность менять размер у поля ввода
+textarea{resize:none;}

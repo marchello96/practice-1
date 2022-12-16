@@ -1,0 +1,407 @@
+
+//============================================================================================
+
+.private {
+	display: flex;
+}
+.private-image {
+	flex: 0 0 50%;
+	position: relative;
+	img{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+	@media(max-width: $md2){
+		display: none;
+	}
+}
+.private-body {
+	flex: 0 0 50%;
+	background-color: #000;
+	padding: 77px 0 75px 59px;
+	@media(max-width: 1080px){
+		padding: 40px 20px 40px 59px;
+	}
+	@media(max-width: $md2){
+		flex: 0 0 100%;
+		
+	}
+	@media(max-width: $md3){
+		padding: 30px 50px 30px 40px;
+	}
+}
+.private-content {
+	text-align: left;
+	max-width: 304px;
+}
+.private__title {
+	font-size: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+	font-family: 'AkzidenzGroteskBQ';
+	@media(max-width: $md3){
+		font-size: 40px;
+	}
+}
+.private__text {
+	font-family: 'PT Sans';
+	font-size: 15px;
+	line-height: 25px;
+	color: #ffffff;
+	margin: 23px 0 0 0;
+	@media(max-width: $md3){
+		display: none;
+	}
+}
+.private__buttons {
+	display: flex;
+	align-items: center;
+	margin: 49px 0 0 0;
+	@media(max-width: $md1){
+		margin: 30px 0 0 0;
+	}
+
+}
+.private__button {
+	margin: 0 16px 0 0;
+}
+.btn--w {
+	background-color: #fff;
+	color: #000;
+	@media(max-width: $md3){
+		width: 120px;
+		font-size: 15px;
+	}
+}
+.private__link {}
+.link--w {
+	color: #fff;
+	@media(max-width: $md3){
+		font-size: 15px;
+	}
+}
+
+//============================================================================================
+
+.menu {
+	@media(max-width: $md2){
+		padding: 0 10px;
+	}
+	@media(max-width: $md2){
+		padding: 0 30px;
+	}
+	@media(max-width: $md3){
+		padding: 0 20px;
+	}
+	margin: 0 0 40px 0;
+}
+.menu__items {
+	margin: 75px 0 0 0;
+	@media(max-width: $md2){
+		margin: 30px 0 0 0;
+	}
+}
+.menu__row {
+	display: flex;
+	align-items: stretch;
+	@media(max-width: $md2){
+		flex-wrap: wrap;
+	}
+}
+.menu__item {
+	flex: 0 0 25%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	@media(max-width: $md2){
+		flex: 0 0 50%;
+	}
+	@media(max-width: $md3){
+		flex: 1 1 100%;
+	}
+}
+.item__image {
+	display: block;
+	position: relative;
+	padding-top: 100%;
+	@media(max-width: $md2){
+		padding-top: 80%;
+	}
+
+	img{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+.item__title {
+	display: block;
+	font-size: 25px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-family: 'AkzidenzGroteskBQ';
+	margin: 22px 0 0 6px;
+	overflow: hidden;
+	height: 50px;
+}
+.item__text {
+	font-size: 15px;
+	line-height: 25px;
+	margin: 26px 20px 0 8px;
+	flex: 1 0 auto;
+}
+.menu__button {
+	margin: 29px 0 0 5px;
+}
+.menu__link {
+	display: block;
+	margin: 28px 0 40px 8px;
+}
+
+//============================================================================================
+
+.why{
+	background-color: #ebebeb;
+}
+.why-top {
+	display: flex;
+}
+.why-title {
+	flex: 0 0 50%;
+	background-color: #000;
+	padding: 50px 62px;
+	text-align: right;
+	@media(max-width: $md2){
+		flex: 0 0 100%;
+		text-align: center;
+	}
+}
+.why-title__text {
+	font-family: 'AkzidenzGroteskBQ';
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+}
+.why-image {
+	position: relative;
+	flex: 0 0 50%;
+	img{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+	@media(max-width: $md2){
+		display: none;
+	}
+}
+
+.why-bottom {
+	padding: 50px 0 0 0;
+}
+.why-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	@media(max-width: $md3){
+		justify-content: center;
+	}
+}
+.why-item {
+	flex: 0 0 50%;
+	display: flex;
+	margin: 0 0 50px 0;
+	@media(max-width: $md1){
+		flex: 0 0 100%;
+	}
+	@media(max-width: $md3){
+		align-items: center;
+	}
+}
+.why-item__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+	flex: 0 0 auto;
+}
+.why-item__body {
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+	@media(max-width: $md3){
+		padding: 0 0 0 30px;
+	}
+}
+.why-item__title {
+	font-family: 'AkzidenzGroteskBQ';
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	flex: 1 0 auto;
+	
+}
+.why-item__text {
+	margin: 30px 0 0 0;
+	font-size: 15px;
+	line-height: 25px;
+	@media(max-width: $md2){
+		margin: 0;
+	}
+	@media(max-width: $md3){
+		display: none;
+	}
+}
+
+//============================================================================================
+
+.contacts {
+	padding: 80px 0 0 0;
+	@media(max-width: $md2){
+		text-align: center;
+	}
+}
+.contacts-title {
+	font-family: 'AkzidenzGroteskBQ';
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.contacts-link {
+	margin: 30px 0 0 0;
+	font-size: 15px;
+}
+.contacts-row {
+	display: flex;
+	flex-wrap: wrap;
+	@media(max-width: $md2){
+		max-width: 291px;
+		margin: 0 auto;
+		padding: 0 5px;
+	}
+}
+.contacts-address {
+	display: flex;
+	align-items: center;
+	flex: 0 0 50%;
+	span{
+		margin: 0 0 0 10px;
+	}
+	margin: 0 0 23px 0;
+}
+.contacts-phone {
+	flex: 0 0 50%;
+	display: flex;
+	span{
+		margin: 0 0 0 10px;
+	}
+	align-items: center;
+	margin: 0 0 23px 0;
+}
+.contacts-mail {
+	display: flex;
+	align-items: center;
+	flex: 0 0 50%;
+	span{
+		margin: 0 0 0 10px;
+	}
+	margin: 0 0 23px 0;
+}
+.contacts-social {
+	display: flex;
+	align-items: center;
+	flex: 0 0 50%;
+	margin: 0 0 23px 0;
+	:last-child{
+		margin: 0;
+	}
+}
+.contacts-social__item {
+	margin: 0 30px 0 0;
+}
+@media(max-width: $md2){
+	.contacts-address, .contacts-phone, .contacts-mail, .contacts-social{
+		flex: 1 1 100%;
+	}
+}
+
+//============================================================================================
+
+.get {
+	display: flex;
+	@media(max-width: $md1){
+		flex-wrap: wrap;
+	}
+}
+.get-map {
+	flex: 0 0 50%;
+	@media(max-width: $md1){
+		flex: 0 0 100%;
+	}
+}
+.map {}
+.get-form {
+	flex: 0 0 50%;
+	background-color: #000;
+	@media(max-width: $md1){
+		flex: 0 0 100%;
+	}
+}
+.form-body {
+	padding: 50px 0 50px 60px;
+	@media(max-width: $md1){
+		padding: 50px 20px;
+	}
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	max-width: 376px;
+	@media(max-width: $md1){
+		margin: 0 auto;
+	}
+}
+.form-title {
+	margin: 0 0 26px 0;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+	font-family: 'AkzidenzGroteskBQ';
+
+}
+.form__name {
+	height: 48px;
+}
+.form__mail {
+	height: 48px;
+}
+.form__message {
+	height: 100px;
+}
+.form__name, .form__mail, .form__message{
+	margin: 0 0 26px 0;
+	background-color: #252525;
+	border: 2px solid #959595;
+	color: #fff;
+	max-width: 376px;
+}
+.form-button{
+
+}
